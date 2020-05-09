@@ -196,7 +196,7 @@
         <div class="contacts__info">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <span>Мы проконсультируем Вас бесплатно</span>
-          <form>
+          <form action="">
             <p class="contacts__item">
               <input type="text" id="contacts-username" name="name-field" placeholder="Имя" required="">
               <label class="visually-hidden" for="contacts-username">Имя</label>
@@ -231,6 +231,7 @@
               <img class="page-footer__logo-image" src="img/logo-footer.png" width="216" height="52" alt="Логотип Smart Device">
             </picture>
           </a>
+          <p class="page-footer__years">1999-2018 SD Service Devices</p>
           <div class="page-footer__social-list">
             <ul>
               <li class="page-footer__social-list--fb">
@@ -263,10 +264,10 @@
         </div>
         <div class="page-footer__site-sections">
           <h3>Разделы сайта</h3>
-          <button type="button">
+          <button class="page-footer__btn page-footer__btn--nav" type="button">
             <span class="visually-hidden">open-accordion</span>
           </button>
-          <ul class="page-footer__nav">
+          <ul class="page-footer__nav  page-footer__off">
             <li class="page-footer__nav-left">
               <ul>
                 <li>
@@ -300,10 +301,10 @@
         </div>
         <div class="page-footer__office-contacts">
           <h3>Наш офис</h3>
-          <button type="button">
+          <button class="page-footer__btn page-footer__btn--office" type="button">
             <span class="visually-hidden">open-accordion</span>
           </button>
-          <ul>
+          <ul class="page-footer__office-list">
             <li class="page-footer__contacts-item">г. Мытищи, Олимпийский проспект, д.10</li>
             <li>
               <a href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -328,12 +329,13 @@
     </div>
   </footer>
   <div class="popup">
+    <div class="popup-overlay"></div>
     <section class="popup__item modal">
       <div class="modal__info">
         <b>Закажите звонок!</b>
         <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <button class="modal__close-btn btn"></button>
-        <form>
+        <form action="">
           <p class="modal__item">
             <input type="text" id="modal-user-name" name="name-modal" placeholder="Имя" required="">
             <label class="visually-hidden" for="modal-user-name">Имя</label>
@@ -407,6 +409,21 @@
         }
       }, false);
     }
+  </script>
+  <script src="https://unpkg.com/imask"></script>
+  <script>
+    var element = document.getElementById('modal-phone');
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    var mask = IMask(element, maskOptions);
+  </script>
+  <script>
+    var element = document.getElementById('contacts-phone');
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    var mask = IMask(element, maskOptions);
   </script>
 </body>
 </html>
