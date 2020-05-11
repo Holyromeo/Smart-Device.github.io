@@ -1016,6 +1016,10 @@ body {
     background-color: #00b2ff;
     color: #ffffff; }
 
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .about-company__container {
+    padding: 0; } }
+
 @media (max-width: 1023px) {
   .about-company__container {
     padding: 24px 0 71px 0; }
@@ -1532,6 +1536,11 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .contacts__container img {
+    width: 30%;
+    overflow: hidden; } }
+
 @media (max-width: 1023px) {
   .contacts__container {
     padding: 0 25px; }
@@ -2003,6 +2012,10 @@ body {
 
 .copyright__text--dev {
   margin-left: 28.2%; }
+
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .copyright__year {
+    left: 160px; } }
 
 @media (max-width: 1023px) {
   .copyright__container {
