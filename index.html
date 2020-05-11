@@ -45,9 +45,7 @@
               <span>+7 (495) 000 52 52</span>
             </a>
           </li>
-          <li class="contact-us__elem-btn">
-            <a href="#" id="request-call">Заказать звонок</a>
-          </li>
+          <a href="#" class="contact-us__elem-btn" id="request-call">Заказать звонок</a>
         </ul>
       </div>
     </header>
@@ -196,7 +194,7 @@
         <div class="contacts__info">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <span>Мы проконсультируем Вас бесплатно</span>
-          <form action="">
+          <form action="#" method="POST">
             <p class="contacts__item">
               <input type="text" id="contacts-username" name="name-field" placeholder="Имя" required="">
               <label class="visually-hidden" for="contacts-username">Имя</label>
@@ -331,11 +329,12 @@
   <div class="popup">
     <div class="popup-overlay"></div>
     <section class="popup__item modal">
+      <h3 class="visually-hidden">Форма для вопросов</h3>
       <div class="modal__info">
         <b>Закажите звонок!</b>
         <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
         <button class="modal__close-btn btn"></button>
-        <form action="">
+        <form action="#" method="POST">
           <p class="modal__item">
             <input type="text" id="modal-user-name" name="name-modal" placeholder="Имя" required="">
             <label class="visually-hidden" for="modal-user-name">Имя</label>
