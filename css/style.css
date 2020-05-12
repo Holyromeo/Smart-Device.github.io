@@ -424,7 +424,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 35px;
+  margin-top: 46px;
   margin-left: 18.6vw; }
 
 .contact-us__elem-tel a,
@@ -462,9 +462,9 @@ body {
 
 .contact-us__elem-btn {
   width: 180px;
+  height: 45px;
   padding: 14px 10px;
-  margin-left: 38px;
-  margin-right: 0;
+  margin: 35px 0 0 38px;
   background-color: transparent;
   border: 1px solid #ffffff;
   -webkit-box-sizing: border-box;
@@ -482,7 +482,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  justify-self: center; }
+  justify-self: center;
+  z-index: 102; }
 
 @media (max-width: 1399px) and (min-width: 1024px) {
   .contact-us__logo {
@@ -551,7 +552,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding-top: 67px; }
+  padding-top: 76px; }
 
 .motherboards__item {
   margin: 0 0 293px 13%; }
@@ -632,7 +633,7 @@ body {
 
 .motherboards__img {
   position: absolute;
-  top: 11px;
+  top: 19px;
   left: 1039px;
   width: 705px;
   height: 515px; }
